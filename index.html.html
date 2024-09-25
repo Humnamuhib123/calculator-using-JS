@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+    <div id="calculator_container">
+        <div id="top_container">
+            <h1 id="output" style="color: rgb(101, 97, 97);">0</h1>
+        </div>
+
+        <div id="bottom_container">
+            <div id="first_row">
+                <button onclick="reset()" style="font-weight: normal; background-color:white; border: none;">AC</button>
+                <button onclick="Delete()" style="font-weight: normal;background-color:white; border: none;">DE</button>
+                <button onclick="inputValue('%')" style="color:grey;background-color:white; border: none;">%</button>
+                <button
+                onclick="inputValue('/')"  style="color:rgb(83, 142, 219); font-size:18px;font-weight: normal;background-color:white; border: none;">/</button>
+            </div>
+            <div id="second_row">
+                <div id="one_container">
+                    <button onclick="inputValue(1)" style="font-weight: normal;color:grey;background-color:white; border: none;">1</button>
+                </div>
+                <div id="two_container">
+                    <button onclick="inputValue(2)" style="font-weight: normal;color:grey;background-color:white; border: none;">2</button>
+                </div>
+                <div id="three_container">
+                    <button onclick="inputValue(3)" style="color:grey; font-weight: normal;background-color:white; border: none;">3</button>
+                </div>
+                <div id="MUL_container">
+                    <button
+                    onclick="inputValue('*')" style="color:rgb(83, 142, 219); font-size:16px;font-weight: normal;background-color:white; border: none;">X</button>
+                </div>
+            </div>
+            <div id="third_row">
+                <div id="four_container">
+                    <button onclick="inputValue(4)" style="font-weight: normal;color:grey;background-color:white; border: none;">4</button>
+                </div>
+                <div id="five_container">
+                    <button onclick="inputValue(5)" style="font-weight: normal;color:grey;background-color:white; border: none;">5</button>
+                </div>
+                <div id="six_container">
+                    <button onclick="inputValue(6)" style="font-weight: normal; color:grey;background-color:white; border: none;">6</button>
+                </div>
+                <div id="SUB_container">
+                    <button
+                    onclick="inputValue('-')" style="color:rgb(83, 142, 219); font-size:18px;font-weight: normal;background-color:white; border: none;">-</button>
+                </div>
+            </div>
+            <div id="fourth_row">
+                <div id="seven_container">
+                    <button onclick="inputValue(7)" style="font-weight: normal;color:grey;background-color:white; border: none;">7</button>
+                </div>
+                <div id="eight_container">
+                    <button onclick="inputValue(8)" style="font-weight: normal; color:grey;background-color:white; border: none;">8</button>
+                </div>
+                <div id="nine_container">
+                    <button onclick="inputValue(9)" style="font-weight: normal;color:grey;background-color:white; border: none;">9</button>
+                </div>
+                <div id="ADD_container">
+                    <button
+                    onclick="inputValue('+')"  style="color:rgb(83, 142, 219); font-size:18px;font-weight: normal;background-color:white; border: none;">+</button>
+                </div>
+            </div>
+
+            <div id="fifth_row">
+                <div id="00_container">
+                    <button onclick="inputValue('00')" style="font-weight: normal;color:grey;background-color:white; border: none;">00</button>
+                </div>
+                <div id="0_container">
+                    <button onclick="inputValue(0)"style="font-weight: normal; color:grey;background-color:white; border: none;">0</button>
+                </div>
+                <div id="dot_container">
+                    <button onclick="inputValue('.')" style="font-weight: normal;color:grey;background-color:white; border: none;"
+                       >.</button>
+                </div>
+                <div class="result_container">
+                    <button onclick="SUM()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="calculator.js"></script>
+
+</html>
